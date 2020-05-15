@@ -1,0 +1,32 @@
+{% extends "blog/base.html" %}
+{% block title %}
+    Home
+{% endblock %}
+{% block content %}
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+          <h1>Welcome to Amazing Blogs!</h1>
+        <p>Raise your thoughts, not your voice.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+
+        {{ blog.description}}
+
+    </div>
+
+    <div id="container">
+      {% load static %}
+
+        <h1 class="text-center mt-5" id="blogdetailtitle">{{ blog.title }}</h1>
+
+        <h5 class="text-center text-muted mb-5">{{ blog.date|date:'F jS Y' }}</h5>
+
+        {{ blog.content|safe }}
+
+    </div>
+{% endblock %}

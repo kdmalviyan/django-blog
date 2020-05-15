@@ -1,0 +1,24 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+h2,h3,h4,h5,h6 {
+    color: #b30000;
+}
+
+html,body{margin:0;padding:0}
+body{sans-serif;}
+div#footer{clear:left;width:100%, text-align:center}
+div#footer{background:#BFBD93;}
+div#footer p{margin:0;padding:5px 10px}
+
+
+
+
+
+
+
+
+
+
